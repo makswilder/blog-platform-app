@@ -1,9 +1,7 @@
 package com.blog.platform.domain.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.Objects;
 import java.util.UUID;
@@ -12,6 +10,8 @@ import java.util.UUID;
 @Table(name = "tags")
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 @Builder
 public class Tag {
     @Id
